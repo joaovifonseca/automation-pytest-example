@@ -24,3 +24,5 @@ def test_should_call_api_with_invalid_cep():
     if response.status_code == 400:
         print(response.text)
         assert True
+    else:
+        assert False
